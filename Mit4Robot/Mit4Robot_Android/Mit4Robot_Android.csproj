@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{624DAE94-F110-4A12-8E47-B6C28B52F710}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mit4Robot_Android</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>ProgramADroid_Android</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Activities\Menus\ActivityHelp.cs" />
+    <Compile Include="Activities\Menus\ActivityCredits.cs" />
+    <Compile Include="Activities\Menus\ActivityHighscores.cs" />
+    <Compile Include="Activities\Menus\ActivityLevelSelect.cs" />
+    <Compile Include="MapRenderer.cs" />
+    <Compile Include="Activities\ActivityGame.cs" />
+    <Compile Include="Activities\Menus\ActivityAchievements.cs" />
+    <Compile Include="Activities\Menus\ActivityOptions.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\layout\ScrollableAlert.axml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\nothing.png" />
+    <AndroidResource Include="Resources\drawable\road.png" />
+    <AndroidResource Include="Resources\drawable\shop1.png" />
+    <AndroidResource Include="Resources\drawable\shop2.png" />
+    <AndroidResource Include="Resources\drawable\shop3.png" />
+    <AndroidResource Include="Resources\drawable\spawn.png" />
+    <AndroidResource Include="Resources\drawable\wall.png" />
+    <AndroidResource Include="Resources\layout\Help.axml" />
+    <AndroidResource Include="Resources\drawable\yellow.png" />
+    <AndroidResource Include="Resources\drawable\red.png" />
+    <AndroidResource Include="Resources\drawable\green.png" />
+    <AndroidResource Include="Resources\drawable\blue.png" />
+    <AndroidResource Include="Resources\drawable\roadTile1.png" />
+    <AndroidResource Include="Resources\drawable\roadTile2.png" />
+    <AndroidResource Include="Resources\drawable\roadTile3.png" />
+    <AndroidResource Include="Resources\drawable\roadTile4.png" />
+    <AndroidResource Include="Resources\drawable\roadTile5.png" />
+    <AndroidResource Include="Resources\drawable\roadTile6.png" />
+    <AndroidResource Include="Resources\drawable\roadTile7.png" />
+    <AndroidResource Include="Resources\drawable\roadTile8.png" />
+    <AndroidResource Include="Resources\drawable\roadTile9.png" />
+    <AndroidResource Include="Resources\drawable\roadTile10.png" />
+    <AndroidResource Include="Resources\drawable\roadTile11.png" />
+    <AndroidResource Include="Resources\drawable\roadTile12.png" />
+    <AndroidResource Include="Resources\drawable\roadTile13.png" />
+    <AndroidResource Include="Resources\drawable\roadTile14.png" />
+    <AndroidResource Include="Resources\drawable\roadTile15.png" />
+    <AndroidResource Include="Resources\drawable\roadTile16.png" />
+    <AndroidResource Include="Resources\drawable\roadTile17.png" />
+    <AndroidResource Include="Resources\drawable\roadTile18.png" />
+    <AndroidResource Include="Resources\drawable\roadTile19.png" />
+    <AndroidResource Include="Resources\drawable\roadTile20.png" />
+    <AndroidResource Include="Resources\drawable\roadTile21.png" />
+    <AndroidResource Include="Resources\drawable\roadTile22.png" />
+    <AndroidResource Include="Resources\drawable\roadTile23.png" />
+    <AndroidResource Include="Resources\drawable\roadTile24.png" />
+    <AndroidResource Include="Resources\drawable\roadTile25.png" />
+    <AndroidResource Include="Resources\drawable\roadTile26.png" />
+    <AndroidResource Include="Resources\drawable\roadTile27.png" />
+    <AndroidResource Include="Resources\drawable\StoreApple.png" />
+    <AndroidResource Include="Resources\drawable\StoreSausage.png" />
+    <AndroidResource Include="Resources\drawable\terrainTile1.png" />
+    <AndroidResource Include="Resources\drawable\terrainTile2.png" />
+    <AndroidResource Include="Resources\drawable\terrainTile3.png" />
+    <AndroidResource Include="Resources\drawable\terrainTile4.png" />
+    <AndroidResource Include="Resources\drawable\terrainTile5.png" />
+    <AndroidResource Include="Resources\drawable\terrainTile6.png" />
+    <AndroidResource Include="Resources\drawable\waterTile1.png" />
+    <AndroidResource Include="Resources\drawable\waterTile2.png" />
+    <AndroidResource Include="Resources\drawable\waterTile3.png" />
+    <AndroidResource Include="Resources\drawable\waterTile4.png" />
+    <AndroidResource Include="Resources\drawable\waterTile5.png" />
+    <AndroidResource Include="Resources\drawable\waterTile6.png" />
+    <AndroidResource Include="Resources\drawable\waterTile7.png" />
+    <AndroidResource Include="Resources\drawable\waterTile8.png" />
+    <AndroidResource Include="Resources\drawable\waterTile9.png" />
+    <AndroidResource Include="Resources\drawable\waterTile10.png" />
+    <AndroidResource Include="Resources\drawable\waterTile11.png" />
+    <AndroidResource Include="Resources\drawable\waterTile12.png" />
+    <AndroidResource Include="Resources\drawable\waterTile13.png" />
+    <AndroidResource Include="Resources\drawable\waterTile14.png" />
+    <AndroidResource Include="Resources\drawable\waterTile15.png" />
+    <AndroidResource Include="Resources\drawable\waterTile16.png" />
+    <AndroidResource Include="Resources\drawable\waterTile17.png" />
+    <AndroidResource Include="Resources\drawable\waterTile18.png" />
+    <AndroidResource Include="Resources\drawable\waterTile19.png" />
+    <AndroidResource Include="Resources\drawable\waterTile20.png" />
+    <AndroidResource Include="Resources\drawable\waterTile21.png" />
+    <AndroidResource Include="Resources\drawable\waterTile22.png" />
+    <AndroidResource Include="Resources\drawable\waterTile23.png" />
+    <AndroidResource Include="Resources\drawable\waterTile24.png" />
+    <AndroidResource Include="Resources\drawable\waterTile25.png" />
+    <AndroidResource Include="Resources\drawable\waterTile26.png" />
+    <AndroidResource Include="Resources\drawable\waterTile27.png" />
+    <AndroidResource Include="Resources\drawable\waterTile28.png" />
+    <AndroidResource Include="Resources\drawable\waterTile29.png" />
+    <AndroidResource Include="Resources\drawable\waterTile30.png" />
+    <AndroidResource Include="Resources\drawable\waterTile31.png" />
+    <AndroidResource Include="Resources\drawable\waterTile32.png" />
+    <AndroidResource Include="Resources\drawable\waterTile33.png" />
+    <AndroidResource Include="Resources\drawable\waterTile34.png" />
+    <AndroidResource Include="Resources\drawable\waterTile35.png" />
+    <AndroidResource Include="Resources\drawable\waterTile36.png" />
+    <AndroidResource Include="Resources\drawable\waterTile37.png" />
+    <AndroidResource Include="Resources\drawable\waterTile38.png" />
+    <AndroidResource Include="Resources\drawable\waterTile39.png" />
+    <AndroidResource Include="Resources\drawable\waterTile40.png" />
+    <AndroidResource Include="Resources\drawable\waterTile41.png" />
+    <AndroidResource Include="Resources\drawable\waterTile42.png" />
+    <AndroidResource Include="Resources\drawable\waterTile43.png" />
+    <AndroidResource Include="Resources\drawable\waterTile44.png" />
+    <AndroidResource Include="Resources\drawable\waterTile45.png" />
+    <AndroidResource Include="Resources\drawable\waterTile46.png" />
+    <AndroidResource Include="Resources\menu\placeholder.xml" />
+    <AndroidResource Include="Resources\values\StringsHelp.xml" />
+    <AndroidResource Include="Resources\drawable\HelpMap.png" />
+    <AndroidResource Include="Resources\drawable\HelpPython.png" />
+    <AndroidResource Include="Resources\drawable\HelpRoad.png" />
+    <AndroidResource Include="Resources\drawable\HelpShop.png" />
+    <AndroidResource Include="Resources\layout\Game.axml" />
+    <AndroidResource Include="Resources\layout\LevelSelect.axml" />
+    <AndroidResource Include="Resources\values\StringsCredits.xml" />
+    <AndroidResource Include="Resources\layout\Credits.axml" />
+    <AndroidResource Include="Resources\layout\Highscores.axml" />
+    <AndroidResource Include="Resources\layout\Achievement.axml" />
+    <AndroidResource Include="Resources\drawable\SpawnFlag01.png" />
+    <AndroidResource Include="Resources\layout\Options.axml" />
+    <AndroidResource Include="Resources\drawable\HelpVariable.png" />
+    <AndroidResource Include="Resources\drawable\HelpPascal.png" />
+  </ItemGroup>
+  <Import Project="..\Shared\Shared.projitems" Label="Shared" Condition="Exists('..\Shared\Shared.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Activities\" />
+    <Folder Include="Activities\Menus\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Assets\Maps\" />
+    <Folder Include="Assets\Maps\Medium\" />
+    <Folder Include="Assets\Maps\Easy\" />
+    <Folder Include="Assets\Maps\Hard\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\roads.png" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy01.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy02.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy03.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy04.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy05.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy06.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy07.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy08.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy09.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy10.tmx" />
+    <AndroidAsset Include="Assets\Maps\Easy\Easy11.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard01.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard02.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard03.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard04.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard05.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard06.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard07.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard08.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard09.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard10.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard11.tmx" />
+    <AndroidAsset Include="Assets\Maps\Hard\Hard12.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium01.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium02.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium03.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium04.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium05.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium06.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium07.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium08.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium09.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium10.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium11.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium12.tmx" />
+    <AndroidAsset Include="Assets\Maps\Medium\Medium13.tmx" />
+  </ItemGroup>
+</Project>

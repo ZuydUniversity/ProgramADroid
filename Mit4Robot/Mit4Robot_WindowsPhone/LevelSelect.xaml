@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Mit4Robot_WindowsPhone.LevelSelect"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Mit4Robot_WindowsPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel>
+            <ComboBox Name="cbLevelPack" HorizontalAlignment="Left" VerticalAlignment="Top" Width="380" Margin="10,0,0,0" SelectionChanged="cbLevelPack_SelectionChanged">
+                <ComboBoxItem Tag="EASY" Content="Easy" HorizontalAlignment="Left" Width="375" IsSelected="True"/>
+                <ComboBoxItem Tag="MEDIUM" Content="Medium" HorizontalAlignment="Left" Width="375"/>
+                <ComboBoxItem Tag="HARD" Content="Hard" HorizontalAlignment="Left" Width="375"/>
+            </ComboBox>
+            <ComboBox x:Name="cbLanguage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="380" Margin="10,0
+                      ,0,0" SelectionChanged="cbLanguage_SelectionChanged">
+                <ComboBoxItem Tag="PYTHON" Content="Python" HorizontalAlignment="Left" Width="375" IsSelected="True"/>
+                <ComboBoxItem Tag="PASCAL" Content="Pascal" HorizontalAlignment="Center" Width="375"/>
+            </ComboBox>
+            <ListBox x:Name="lbLevels" HorizontalAlignment="Left" Height="526" Margin="10,0,0,0" VerticalAlignment="Top" Width="380" SelectionChanged="lbLevels_SelectionChanged"/>
+        </StackPanel>
+</Page>

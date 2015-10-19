@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Mit4Robot_WindowsPhone.Highscore"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Mit4Robot_WindowsPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <ComboBox x:Name="cbPackSelect" Margin="10,0" >
+            <ComboBoxItem Content="All" HorizontalAlignment="Left" Width="375" IsEnabled="True"/>
+            <ComboBoxItem Content="Easy" HorizontalAlignment="Left" Width="375"/>
+            <ComboBoxItem Content="Medium" HorizontalAlignment="Left" Width="375"/>
+            <ComboBoxItem Content="Hard" HorizontalAlignment="Left" Width="375"/>
+        </ComboBox>
+        <ListBox Height="570" Margin="10,0" VerticalAlignment="Stretch"/>
+
+    </StackPanel>
+</Page>

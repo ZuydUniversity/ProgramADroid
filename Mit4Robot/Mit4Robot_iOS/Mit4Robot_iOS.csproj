@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{3478CE0F-CF19-4F27-AF04-CDFB458126B7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mit4RobotApp</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ProgramADroid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <AssemblyName>ProgramADroid</AssemblyName>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AssemblyName>Mit4RobotApp</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <AssemblyName>ProgramADroid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <AssemblyName>ProgramADroid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <AssemblyName>Mit4RobotApp</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\EmptyScreen.xib" />
+    <InterfaceDefinition Include="Resources\StoryboardMain.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\VCGame.cs" />
+    <Compile Include="ViewControllers\VCGame.designer.cs">
+      <DependentUpon>VCGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Menus\VCHelpMenu.cs" />
+    <Compile Include="ViewControllers\Menus\VCHelpMenu.designer.cs">
+      <DependentUpon>VCHelpMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Menus\VCHighScoresMenu.cs" />
+    <Compile Include="ViewControllers\Menus\VCHighScoresMenu.designer.cs">
+      <DependentUpon>VCHighScoresMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Menus\VCMainMenu.cs" />
+    <Compile Include="ViewControllers\Menus\VCMainMenu.designer.cs">
+      <DependentUpon>VCMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Menus\VCCreditsMenu.cs" />
+    <Compile Include="ViewControllers\Menus\VCCreditsMenu.designer.cs">
+      <DependentUpon>VCCreditsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\KeyboardMoveView.cs" />
+    <Compile Include="ViewControllers\Menus\VCHelpDetailsMenu.cs" />
+    <Compile Include="ViewControllers\Menus\VCHelpDetailsMenu.designer.cs">
+      <DependentUpon>VCHelpDetailsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Menus\VCGameSetup.cs" />
+    <Compile Include="ViewControllers\Menus\VCGameSetup.designer.cs">
+      <DependentUpon>VCGameSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Menus\VCAchievementsMenu.cs" />
+    <Compile Include="ViewControllers\Menus\VCAchievementsMenu.designer.cs">
+      <DependentUpon>VCAchievementsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Menus\VCOptionsMenu.cs" />
+    <Compile Include="ViewControllers\Menus\VCOptionsMenu.designer.cs">
+      <DependentUpon>VCOptionsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TableviewSources\TBSSelectLevelSource.cs" />
+    <Compile Include="Resources\TableviewSources\TBSAchievements.cs" />
+    <Compile Include="Resources\TableviewSources\TBSHighScores.cs" />
+  </ItemGroup>
+  <Import Project="..\Shared\Shared.projitems" Label="Shared" Condition="Exists('..\Shared\Shared.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Icon.png" />
+    <BundleResource Include="Resources\Images\blueEast.png" />
+    <BundleResource Include="Resources\Images\blueNorth.png" />
+    <BundleResource Include="Resources\Images\blueSouth.png" />
+    <BundleResource Include="Resources\Images\blueWest.png" />
+    <BundleResource Include="Resources\Images\green.png" />
+    <BundleResource Include="Resources\Images\nothing.png" />
+    <BundleResource Include="Resources\Images\red.png" />
+    <BundleResource Include="Resources\Images\road.png" />
+    <BundleResource Include="Resources\Images\shop1.png" />
+    <BundleResource Include="Resources\Images\shop2.png" />
+    <BundleResource Include="Resources\Images\shop3.png" />
+    <BundleResource Include="Resources\Images\spawn.png" />
+    <BundleResource Include="Resources\Images\wall.png" />
+    <BundleResource Include="Resources\Images\yellow.png" />
+    <BundleResource Include="Resources\Images\MapTiles\0.png" />
+    <BundleResource Include="Resources\Images\MapTiles\1.png" />
+    <BundleResource Include="Resources\Images\MapTiles\10.png" />
+    <BundleResource Include="Resources\Images\MapTiles\11.png" />
+    <BundleResource Include="Resources\Images\MapTiles\12.png" />
+    <BundleResource Include="Resources\Images\MapTiles\13.png" />
+    <BundleResource Include="Resources\Images\MapTiles\14.png" />
+    <BundleResource Include="Resources\Images\MapTiles\15.png" />
+    <BundleResource Include="Resources\Images\MapTiles\16.png" />
+    <BundleResource Include="Resources\Images\MapTiles\17.png" />
+    <BundleResource Include="Resources\Images\MapTiles\18.png" />
+    <BundleResource Include="Resources\Images\MapTiles\19.png" />
+    <BundleResource Include="Resources\Images\MapTiles\2.png" />
+    <BundleResource Include="Resources\Images\MapTiles\20.png" />
+    <BundleResource Include="Resources\Images\MapTiles\21.png" />
+    <BundleResource Include="Resources\Images\MapTiles\22.png" />
+    <BundleResource Include="Resources\Images\MapTiles\23.png" />
+    <BundleResource Include="Resources\Images\MapTiles\24.png" />
+    <BundleResource Include="Resources\Images\MapTiles\25.png" />
+    <BundleResource Include="Resources\Images\MapTiles\26.png" />
+    <BundleResource Include="Resources\Images\MapTiles\27.png" />
+    <BundleResource Include="Resources\Images\MapTiles\28.png" />
+    <BundleResource Include="Resources\Images\MapTiles\29.png" />
+    <BundleResource Include="Resources\Images\MapTiles\3.png" />
+    <BundleResource Include="Resources\Images\MapTiles\30.png" />
+    <BundleResource Include="Resources\Images\MapTiles\31.png" />
+    <BundleResource Include="Resources\Images\MapTiles\32.png" />
+    <BundleResource Include="Resources\Images\MapTiles\33.png" />
+    <BundleResource Include="Resources\Images\MapTiles\34.png" />
+    <BundleResource Include="Resources\Images\MapTiles\35.png" />
+    <BundleResource Include="Resources\Images\MapTiles\36.png" />
+    <BundleResource Include="Resources\Images\MapTiles\37.png" />
+    <BundleResource Include="Resources\Images\MapTiles\38.png" />
+    <BundleResource Include="Resources\Images\MapTiles\39.png" />
+    <BundleResource Include="Resources\Images\MapTiles\4.png" />
+    <BundleResource Include="Resources\Images\MapTiles\40.png" />
+    <BundleResource Include="Resources\Images\MapTiles\41.png" />
+    <BundleResource Include="Resources\Images\MapTiles\42.png" />
+    <BundleResource Include="Resources\Images\MapTiles\43.png" />
+    <BundleResource Include="Resources\Images\MapTiles\44.png" />
+    <BundleResource Include="Resources\Images\MapTiles\45.png" />
+    <BundleResource Include="Resources\Images\MapTiles\46.png" />
+    <BundleResource Include="Resources\Images\MapTiles\47.png" />
+    <BundleResource Include="Resources\Images\MapTiles\48.png" />
+    <BundleResource Include="Resources\Images\MapTiles\49.png" />
+    <BundleResource Include="Resources\Images\MapTiles\5.png" />
+    <BundleResource Include="Resources\Images\MapTiles\50.png" />
+    <BundleResource Include="Resources\Images\MapTiles\51.png" />
+    <BundleResource Include="Resources\Images\MapTiles\52.png" />
+    <BundleResource Include="Resources\Images\MapTiles\53.png" />
+    <BundleResource Include="Resources\Images\MapTiles\54.png" />
+    <BundleResource Include="Resources\Images\MapTiles\55.png" />
+    <BundleResource Include="Resources\Images\MapTiles\56.png" />
+    <BundleResource Include="Resources\Images\MapTiles\57.png" />
+    <BundleResource Include="Resources\Images\MapTiles\58.png" />
+    <BundleResource Include="Resources\Images\MapTiles\59.png" />
+    <BundleResource Include="Resources\Images\MapTiles\6.png" />
+    <BundleResource Include="Resources\Images\MapTiles\60.png" />
+    <BundleResource Include="Resources\Images\MapTiles\61.png" />
+    <BundleResource Include="Resources\Images\MapTiles\62.png" />
+    <BundleResource Include="Resources\Images\MapTiles\63.png" />
+    <BundleResource Include="Resources\Images\MapTiles\64.png" />
+    <BundleResource Include="Resources\Images\MapTiles\65.png" />
+    <BundleResource Include="Resources\Images\MapTiles\66.png" />
+    <BundleResource Include="Resources\Images\MapTiles\67.png" />
+    <BundleResource Include="Resources\Images\MapTiles\68.png" />
+    <BundleResource Include="Resources\Images\MapTiles\69.png" />
+    <BundleResource Include="Resources\Images\MapTiles\7.png" />
+    <BundleResource Include="Resources\Images\MapTiles\70.png" />
+    <BundleResource Include="Resources\Images\MapTiles\71.png" />
+    <BundleResource Include="Resources\Images\MapTiles\72.png" />
+    <BundleResource Include="Resources\Images\MapTiles\73.png" />
+    <BundleResource Include="Resources\Images\MapTiles\74.png" />
+    <BundleResource Include="Resources\Images\MapTiles\75.png" />
+    <BundleResource Include="Resources\Images\MapTiles\76.png" />
+    <BundleResource Include="Resources\Images\MapTiles\77.png" />
+    <BundleResource Include="Resources\Images\MapTiles\78.png" />
+    <BundleResource Include="Resources\Images\MapTiles\79.png" />
+    <BundleResource Include="Resources\Images\MapTiles\8.png" />
+    <BundleResource Include="Resources\Images\MapTiles\80.png" />
+    <BundleResource Include="Resources\Images\MapTiles\9.png" />
+    <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\Maps\Easy\Easy01.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy02.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy03.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy04.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy05.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy06.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy07.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy08.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy09.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy10.tmx" />
+    <BundleResource Include="Resources\Maps\Easy\Easy11.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard01.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard02.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard03.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard04.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard05.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard06.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard07.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard08.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard09.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard10.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard11.tmx" />
+    <BundleResource Include="Resources\Maps\Hard\Hard12.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium10.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium11.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium12.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium13.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium01.tmx">
+      <DependentUpon>Medium13.tmx</DependentUpon>
+    </BundleResource>
+    <BundleResource Include="Resources\Maps\Medium\Medium02.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium03.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium04.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium05.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium06.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium07.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium08.tmx" />
+    <BundleResource Include="Resources\Maps\Medium\Medium09.tmx" />
+    <BundleResource Include="Resources\Images\Help\HelpMap.png" />
+    <BundleResource Include="Resources\Images\Help\HelpPython.png" />
+    <BundleResource Include="Resources\Images\Help\HelpRoad.png" />
+    <BundleResource Include="Resources\Images\Help\HelpShop.png" />
+    <BundleResource Include="Resources\Images\MapTiles\81.png" />
+    <BundleResource Include="Resources\Images\Help\HelpPascal.png" />
+    <BundleResource Include="Resources\Images\Help\HelpVariable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\en.lproj\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Resources\Maps\Easy\" />
+    <Folder Include="Resources\Maps\Hard\" />
+    <Folder Include="Resources\Maps\Medium\" />
+    <Folder Include="Resources\Images\Help\" />
+  </ItemGroup>
+</Project>

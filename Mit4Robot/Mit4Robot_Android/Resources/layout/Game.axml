@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:id="@+id/scrollGame">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <Button
+                android:text="@string/btnOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnGameOptions" />
+            <TextView
+                android:text="@string/txtGameHelp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtGameHelp"
+                android:gravity="right"
+                android:layout_width="266.5dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:text="@string/txtGameOptions"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGameOptions" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/btnGameCodeOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1"
+                android:id="@+id/btnGameCodeOpen" />
+            <Button
+                android:text="@string/btnGameCodeSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/btnGameCodeSave" />
+            <Button
+                android:text="@string/btnGameCodeDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnGameCodeDelete" />
+        </LinearLayout>
+        <Button
+            android:text="@string/btnGameCodeShare"
+            android:id="@+id/btnGameCodeShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGoals" />
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgGameMap"
+            android:minHeight="800dp"
+            android:maxHeight="800dp"
+            android:minWidth="600dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/btnGameCodeValidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnGameCodeValidate" />
+            <Button
+                android:text="@string/btnGameCodeReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnGameCodeReset" />
+        </LinearLayout>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGameCodeExecute" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:id="@+id/txtGameError" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtGameCodeInput"
+            android:textSize="20dp"
+            android:fontFamily="monospace"
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:text="@string/txtCodeField" />
+    </LinearLayout>
+</ScrollView>

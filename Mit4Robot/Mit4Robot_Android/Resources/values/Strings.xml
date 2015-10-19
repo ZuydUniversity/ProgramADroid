@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--- General -->
+	<string name="btnCancel">Cancel</string>
+	<string name="btnClose">Close</string>
+	<string name="btnBack">Back</string>
+
+<!-- ActivityHelp -->
+	<string name="btnHelpTiles">Meer info over het speelveld</string>
+	<string name="btnHelpVariables">Meer info over variabelen</string>
+	<string name="btnHelpFunctions">Meer info over de functies</string>
+	<string name="btnHelpLanguage">Meer info over de programmeert(a)al(en)</string>
+	<string name="btnMainMenu">Back to main menu</string>
+
+<!--- MainActivity -->
+	<string name="btnMainStart">Start</string>
+	<string name="btnMainHelp">Help</string>
+	<string name="btnMainHighscores">Highscores</string>
+	<string name="btnMainCredits">Credits</string>
+	<string name="btnOptions">Options</string>
+	<string name="btnAchievements">Achievements</string>
+
+<!--- ActivityDifficulty -->
+	<string name="btnDifficultyEasy">Easy</string>
+	<string name="btnDifficultyMedium">Medium</string>
+	<string name="btnDifficultyHard">Hard</string>
+
+<!--- ActivityLanguage -->
+	<string name="btnLanguagePython">Python</string>
+	<string name="btnLanguagePascal">Pascal</string>
+
+
+<!-- ActivityGame -->
+	<string name="txtGameHelp">"?"</string>
+	<string name="txtGameOptions">Code opties:</string>
+
+	<string name="btnGameCodeOpen">Open file</string>
+	<string name="btnGameCodeSave">Save file</string>
+	<string name="btnGameCodeShare">Share code!</string>
+	<string name="btnGameCodeValidate">Validate code!</string>
+	<string name="btnGameCodeReset">Reset!</string>
+	<string name="btnGameCodeDelete">Delete file</string>
+
+	<string name="txtCodeField">\n\n\n\n\n</string>
+
+	<!-- ActivityCredits -->
+	<string name = "btnCreditsBack">Back</string>
+
+	<!-- ActivityAchievements -->
+	<string name = "btnAchievementsBack">Back</string>
+
+	<!--- ActivityOptions -->
+	<string name="btnOptionsSave">Save</string>
+	<string name="txtOptionsSpeed">Game speed</string>
+
+	<string-array name="difficulties">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="programLanguages">
+        <item>Python</item>
+        <item>Pascal</item>
+    </string-array>
+</resources>

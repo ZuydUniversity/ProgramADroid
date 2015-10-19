@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="8" height="10" tilewidth="64" tileheight="64" nextobjectid="1">
+ <tileset firstgid="1" name="roads" tilewidth="64" tileheight="64">
+  <image source="sprites/roads.png" width="576" height="576"/>
+ </tileset>
+ <tileset firstgid="82" name="RPGpack_sheet" tilewidth="64" tileheight="64">
+  <image source="sprites/RPGpack_sheet.png" width="1280" height="832"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="8" height="10">
+  <data>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="49"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="66"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="41"/>
+   <tile gid="9"/>
+   <tile gid="71"/>
+   <tile gid="37"/>
+   <tile gid="70"/>
+   <tile gid="57"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="68"/>
+   <tile gid="52"/>
+   <tile gid="52"/>
+   <tile gid="59"/>
+   <tile gid="18"/>
+   <tile gid="57"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="68"/>
+   <tile gid="52"/>
+   <tile gid="44"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="1"/>
+   <tile gid="32"/>
+   <tile gid="32"/>
+   <tile gid="2"/>
+   <tile gid="32"/>
+   <tile gid="32"/>
+   <tile gid="14"/>
+   <tile gid="34"/>
+   <tile gid="7"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="7"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="7"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="7"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="15"/>
+   <tile gid="32"/>
+   <tile gid="32"/>
+   <tile gid="8"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="28"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+  </data>
+ </layer>
+</map>

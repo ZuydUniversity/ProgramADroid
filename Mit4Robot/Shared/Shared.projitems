@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{614954E7-43CF-41E3-A7D1-7C4B87BEBB0B}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)GlobalSupport.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parsers\MapParsers\CustomMapParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EDifficulty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parsers\MapParsers\MapParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parsers\MapParsers\TiledParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parsers\CodeParsers\CodeParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parsers\CodeParsers\PascalParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parsers\CodeParsers\PythonParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ECanInstructions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ECommands.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ELogicOperators.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EOrientation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\Command.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\Composite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\WhileLoop.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\IfStatement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\Forward.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\PickUp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\TurnRight.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\MainCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\ILexer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\Lexer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\TokenDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\Token.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\TokenPosition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\RobotException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EGameLanguage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EShops.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\MapException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Solver\ConcreteInstruction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Solver\ConditionCombo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Solver\ICondition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Solver\Operator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Solver\Solver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\MapParseException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\DataBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\SyntaxParseException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\CodeParseException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EComparisonOperator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EAssignmentOperator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\IAssignment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\VariableSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\VariableCombo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\ConcreteVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\DefineVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\AssignmentOperator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\CmdDefineVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\RunTimeException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EVariableType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EMathOperator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\MathOperator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\ForLoop.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Solver\ValueSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\FunctionBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\FunctionBlockList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\FunctionBlockExecute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ETokenType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\ICodeBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Achievements\AchievementManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\Variable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\GameObjects\ConditionsClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\GameObjects\Map.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\GameObjects\Robot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Business Layer\GameObjects\Tile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomEventArgs\AchievementEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomEventArgs\HighlightCodeEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\EAchievementType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\Models\Code.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\Models\HighScore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\Models\iTableDefault.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\Models\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\Models\Achievement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Parsers\MapParsers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Parsers\CodeParsers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Enums\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Business Layer\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Business Layer\Codeblock\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Utilities\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Exceptions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Business Layer\Solver\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataBase\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Business Layer\VariableSolver\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Achievements\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Business Layer\GameObjects\" />
+    <Folder Include="$(MSBuildThisFileDirectory)CustomEventArgs\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataBase\Models\" />
+  </ItemGroup>
+</Project>

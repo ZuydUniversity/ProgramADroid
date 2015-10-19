@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string name="txtCredits">
+		Voor de minor "Cross-platform Mobile Development" heeft een groep van vijf studenten van Zuyd Hogeschool te Heerlen een serious game ontwikkelt. \n
+		Deze serious game laat de gebruiker van de applicatie een robot programmern. \n
+		Hierbij is het de bedoeling dat de robot boodschappen gaat doen bij de betreffende winkels. \n\n
+
+		Credits: \n\n
+
+		Opdrachtgever: \n
+		M. van de Laar \n\n
+
+		Developers: \n
+		Bjørn Broer \n
+		Stef Chappin\n
+		Max Hamulyák \n
+		Bert van Montfort \n
+		Guy Spronck \n\n
+
+		Level designer: \n
+		Bert van Montfort \n\n
+
+		Publicatiejaar:\n
+		Het publicatiejaar van de MIT4 robot app is 2015.
+
+	</string>
+</resources>
+

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA23B007-D7C0-40ED-9341-A1AA76F10365}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mit4Robot_WindowsPhone</RootNamespace>
+    <AssemblyName>Mit4Robot_WindowsPhone</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Achievements.xaml.cs">
+      <DependentUpon>Achievements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\MapRenderer.cs" />
+    <Compile Include="Game.xaml.cs">
+      <DependentUpon>Game.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Highscores.xaml.cs">
+      <DependentUpon>Highscores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LevelSelect.xaml.cs">
+      <DependentUpon>LevelSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\tiles\roadTile1.png" />
+    <Content Include="Assets\tiles\roadTile10.png" />
+    <Content Include="Assets\tiles\roadTile11.png" />
+    <Content Include="Assets\tiles\roadTile12.png" />
+    <Content Include="Assets\tiles\roadTile13.png" />
+    <Content Include="Assets\tiles\roadTile14.png" />
+    <Content Include="Assets\tiles\roadTile15.png" />
+    <Content Include="Assets\tiles\roadTile16.png" />
+    <Content Include="Assets\tiles\roadTile17.png" />
+    <Content Include="Assets\tiles\roadTile18.png" />
+    <Content Include="Assets\tiles\roadTile19.png" />
+    <Content Include="Assets\tiles\roadTile2.png" />
+    <Content Include="Assets\tiles\roadTile20.png" />
+    <Content Include="Assets\tiles\roadTile21.png" />
+    <Content Include="Assets\tiles\roadTile22.png" />
+    <Content Include="Assets\tiles\roadTile23.png" />
+    <Content Include="Assets\tiles\roadTile24.png" />
+    <Content Include="Assets\tiles\roadTile25.png" />
+    <Content Include="Assets\tiles\roadTile26.png" />
+    <Content Include="Assets\tiles\roadTile27.png" />
+    <Content Include="Assets\tiles\roadTile3.png" />
+    <Content Include="Assets\tiles\roadTile4.png" />
+    <Content Include="Assets\tiles\roadTile5.png" />
+    <Content Include="Assets\tiles\roadTile6.png" />
+    <Content Include="Assets\tiles\roadTile7.png" />
+    <Content Include="Assets\tiles\roadTile8.png" />
+    <Content Include="Assets\tiles\roadTile9.png" />
+    <Content Include="Assets\tiles\SpawnFlag01.png" />
+    <Content Include="Assets\tiles\StoreApple.png" />
+    <Content Include="Assets\tiles\StoreSausage.png" />
+    <Content Include="Assets\tiles\terrainTile1.png" />
+    <Content Include="Assets\tiles\terrainTile2.png" />
+    <Content Include="Assets\tiles\terrainTile3.png" />
+    <Content Include="Assets\tiles\terrainTile4.png" />
+    <Content Include="Assets\tiles\terrainTile5.png" />
+    <Content Include="Assets\tiles\terrainTile6.png" />
+    <Content Include="Assets\tiles\waterTile1.png" />
+    <Content Include="Assets\tiles\waterTile10.png" />
+    <Content Include="Assets\tiles\waterTile11.png" />
+    <Content Include="Assets\tiles\waterTile12.png" />
+    <Content Include="Assets\tiles\waterTile13.png" />
+    <Content Include="Assets\tiles\waterTile14.png" />
+    <Content Include="Assets\tiles\waterTile15.png" />
+    <Content Include="Assets\tiles\waterTile16.png" />
+    <Content Include="Assets\tiles\waterTile17.png" />
+    <Content Include="Assets\tiles\waterTile18.png" />
+    <Content Include="Assets\tiles\waterTile19.png" />
+    <Content Include="Assets\tiles\waterTile2.png" />
+    <Content Include="Assets\tiles\waterTile20.png" />
+    <Content Include="Assets\tiles\waterTile21.png" />
+    <Content Include="Assets\tiles\waterTile22.png" />
+    <Content Include="Assets\tiles\waterTile23.png" />
+    <Content Include="Assets\tiles\waterTile24.png" />
+    <Content Include="Assets\tiles\waterTile25.png" />
+    <Content Include="Assets\tiles\waterTile26.png" />
+    <Content Include="Assets\tiles\waterTile27.png" />
+    <Content Include="Assets\tiles\waterTile28.png" />
+    <Content Include="Assets\tiles\waterTile29.png" />
+    <Content Include="Assets\tiles\waterTile3.png" />
+    <Content Include="Assets\tiles\waterTile30.png" />
+    <Content Include="Assets\tiles\waterTile31.png" />
+    <Content Include="Assets\tiles\waterTile32.png" />
+    <Content Include="Assets\tiles\waterTile33.png" />
+    <Content Include="Assets\tiles\waterTile34.png" />
+    <Content Include="Assets\tiles\waterTile35.png" />
+    <Content Include="Assets\tiles\waterTile36.png" />
+    <Content Include="Assets\tiles\waterTile37.png" />
+    <Content Include="Assets\tiles\waterTile38.png" />
+    <Content Include="Assets\tiles\waterTile39.png" />
+    <Content Include="Assets\tiles\waterTile4.png" />
+    <Content Include="Assets\tiles\waterTile40.png" />
+    <Content Include="Assets\tiles\waterTile41.png" />
+    <Content Include="Assets\tiles\waterTile42.png" />
+    <Content Include="Assets\tiles\waterTile43.png" />
+    <Content Include="Assets\tiles\waterTile44.png" />
+    <Content Include="Assets\tiles\waterTile45.png" />
+    <Content Include="Assets\tiles\waterTile46.png" />
+    <Content Include="Assets\tiles\waterTile5.png" />
+    <Content Include="Assets\tiles\waterTile6.png" />
+    <Content Include="Assets\tiles\waterTile7.png" />
+    <Content Include="Assets\tiles\waterTile8.png" />
+    <Content Include="Assets\tiles\waterTile9.png" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Achievements.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Game.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Highscores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LevelSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="WriteableBitmapEx.WinRT">
+      <HintPath>..\packages\WriteableBitmapEx.1.5.0.0\lib\wpa81\WriteableBitmapEx.WinRT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Levels\Easy\Easy01.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy02.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy03.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy04.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy05.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy06.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy07.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy08.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy09.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy10.tmx" />
+    <Content Include="Assets\Levels\Easy\Easy11.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium01.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium02.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium03.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium04.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium05.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium06.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium07.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium08.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium09.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium10.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium11.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium12.tmx" />
+    <Content Include="Assets\Levels\Medium\Medium13.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard01.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard02.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard03.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard04.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard05.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard06.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard07.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard08.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard09.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard10.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard11.tmx" />
+    <Content Include="Assets\Levels\Hard\Hard12.tmx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

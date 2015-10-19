@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="5" height="5" tilewidth="64" tileheight="64" nextobjectid="13">
+ <tileset firstgid="1" name="roads" tilewidth="64" tileheight="64">
+  <image source="sprites/roads.png" width="576" height="576"/>
+ </tileset>
+ <tileset firstgid="82" name="robots" tilewidth="64" tileheight="64">
+  <tile id="0">
+   <image width="64" height="64" source="sprites/robot/blue.png"/>
+  </tile>
+  <tile id="1">
+   <image width="64" height="64" source="sprites/robot/green.png"/>
+  </tile>
+  <tile id="2">
+   <image width="64" height="64" source="sprites/robot/red.png"/>
+  </tile>
+  <tile id="3">
+   <image width="64" height="64" source="sprites/robot/yellow.png"/>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="5" height="5">
+  <data>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="20"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="7"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="7"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="7"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="28"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" opacity="0.45">
+  <properties>
+   <property name="shop" value="true"/>
+  </properties>
+ </objectgroup>
+ <layer name="robot" width="5" height="5">
+  <data>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="82"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="83"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="3221225557"/>
+   <tile gid="84"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+  </data>
+ </layer>
+</map>

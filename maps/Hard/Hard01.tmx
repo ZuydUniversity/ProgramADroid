@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="14" height="14" tilewidth="64" tileheight="64" nextobjectid="1">
+ <properties>
+  <property name="Cabbage" value="5"/>
+  <property name="CabbagesToRetreive" value="1"/>
+  <property name="Ham" value="5"/>
+  <property name="Sausage" value="5"/>
+  <property name="SausagesToRetreive" value="1"/>
+  <property name="minLines" value="20"/>
+  <property name="minMoves" value="40"/>
+ </properties>
+ <tileset firstgid="1" name="Roadmap" tilewidth="32" tileheight="32">
+  <tile id="0">
+   <image width="32" height="32" source="../tiles.images/nothing.png"/>
+  </tile>
+  <tile id="1">
+   <image width="32" height="32" source="../tiles.images/road.png"/>
+  </tile>
+  <tile id="2">
+   <image width="32" height="32" source="../tiles.images/shop1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="32" height="32" source="../tiles.images/shop2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="32" height="32" source="../tiles.images/shop3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="32" height="32" source="../tiles.images/spawn.png"/>
+  </tile>
+  <tile id="6">
+   <image width="32" height="32" source="../tiles.images/wall.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="tilesRoad" tilewidth="64" tileheight="64">
+  <tile id="0">
+   <image width="64" height="64" source="../sprites/road/roadTile1.png"/>
+  </tile>
+  <tile id="1">
+   <image width="64" height="64" source="../sprites/road/roadTile2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="64" height="64" source="../sprites/road/roadTile3.png"/>
+  </tile>
+  <tile id="3">
+   <image width="64" height="64" source="../sprites/road/roadTile4.png"/>
+  </tile>
+  <tile id="4">
+   <image width="64" height="64" source="../sprites/road/roadTile5.png"/>
+  </tile>
+  <tile id="5">
+   <image width="64" height="64" source="../sprites/road/roadTile6.png"/>
+  </tile>
+  <tile id="6">
+   <image width="64" height="64" source="../sprites/road/roadTile7.png"/>
+  </tile>
+  <tile id="7">
+   <image width="64" height="64" source="../sprites/road/roadTile8.png"/>
+  </tile>
+  <tile id="8">
+   <image width="64" height="64" source="../sprites/road/roadTile9.png"/>
+  </tile>
+  <tile id="9">
+   <image width="64" height="64" source="../sprites/road/roadTile10.png"/>
+  </tile>
+  <tile id="10">
+   <image width="64" height="64" source="../sprites/road/roadTile11.png"/>
+  </tile>
+  <tile id="11">
+   <image width="64" height="64" source="../sprites/road/roadTile12.png"/>
+  </tile>
+  <tile id="12">
+   <image width="64" height="64" source="../sprites/road/roadTile13.png"/>
+  </tile>
+  <tile id="13">
+   <image width="64" height="64" source="../sprites/road/roadTile14.png"/>
+  </tile>
+  <tile id="14">
+   <image width="64" height="64" source="../sprites/road/roadTile15.png"/>
+  </tile>
+  <tile id="15">
+   <image width="64" height="64" source="../sprites/road/roadTile16.png"/>
+  </tile>
+  <tile id="16">
+   <image width="64" height="64" source="../sprites/road/roadTile17.png"/>
+  </tile>
+  <tile id="17">
+   <image width="64" height="64" source="../sprites/road/roadTile18.png"/>
+  </tile>
+  <tile id="18">
+   <image width="64" height="64" source="../sprites/road/roadTile19.png"/>
+  </tile>
+  <tile id="19">
+   <image width="64" height="64" source="../sprites/road/roadTile20.png"/>
+  </tile>
+  <tile id="20">
+   <image width="64" height="64" source="../sprites/road/roadTile21.png"/>
+  </tile>
+  <tile id="21">
+   <image width="64" height="64" source="../sprites/road/roadTile22.png"/>
+  </tile>
+  <tile id="22">
+   <image width="64" height="64" source="../sprites/road/roadTile23.png"/>
+  </tile>
+  <tile id="23">
+   <image width="64" height="64" source="../sprites/road/roadTile24.png"/>
+  </tile>
+  <tile id="24">
+   <image width="64" height="64" source="../sprites/road/roadTile25.png"/>
+  </tile>
+  <tile id="25">
+   <image width="64" height="64" source="../sprites/road/roadTile26.png"/>
+  </tile>
+  <tile id="26">
+   <image width="64" height="64" source="../sprites/road/roadTile27.png"/>
+  </tile>
+  <tile id="27">
+   <image width="64" height="64" source="../sprites/road/terrainTile1.png"/>
+  </tile>
+  <tile id="28">
+   <image width="64" height="64" source="../sprites/road/terrainTile2.png"/>
+  </tile>
+  <tile id="29">
+   <image width="64" height="64" source="../sprites/road/terrainTile3.png"/>
+  </tile>
+  <tile id="30">
+   <image width="64" height="64" source="../sprites/road/terrainTile4.png"/>
+  </tile>
+  <tile id="31">
+   <image width="64" height="64" source="../sprites/road/terrainTile5.png"/>
+  </tile>
+  <tile id="32">
+   <image width="64" height="64" source="../sprites/road/terrainTile6.png"/>
+  </tile>
+  <tile id="33">
+   <image width="64" height="64" source="../sprites/road/waterTile1.png"/>
+  </tile>
+  <tile id="34">
+   <image width="64" height="64" source="../sprites/road/waterTile2.png"/>
+  </tile>
+  <tile id="35">
+   <image width="64" height="64" source="../sprites/road/waterTile3.png"/>
+  </tile>
+  <tile id="36">
+   <image width="64" height="64" source="../sprites/road/waterTile4.png"/>
+  </tile>
+  <tile id="37">
+   <image width="64" height="64" source="../sprites/road/waterTile5.png"/>
+  </tile>
+  <tile id="38">
+   <image width="64" height="64" source="../sprites/road/waterTile6.png"/>
+  </tile>
+  <tile id="39">
+   <image width="64" height="64" source="../sprites/road/waterTile7.png"/>
+  </tile>
+  <tile id="40">
+   <image width="64" height="64" source="../sprites/road/waterTile8.png"/>
+  </tile>
+  <tile id="41">
+   <image width="64" height="64" source="../sprites/road/waterTile9.png"/>
+  </tile>
+  <tile id="42">
+   <image width="64" height="64" source="../sprites/road/waterTile10.png"/>
+  </tile>
+  <tile id="43">
+   <image width="64" height="64" source="../sprites/road/waterTile11.png"/>
+  </tile>
+  <tile id="44">
+   <image width="64" height="64" source="../sprites/road/waterTile12.png"/>
+  </tile>
+  <tile id="45">
+   <image width="64" height="64" source="../sprites/road/waterTile13.png"/>
+  </tile>
+  <tile id="46">
+   <image width="64" height="64" source="../sprites/road/waterTile14.png"/>
+  </tile>
+  <tile id="47">
+   <image width="64" height="64" source="../sprites/road/waterTile15.png"/>
+  </tile>
+  <tile id="48">
+   <image width="64" height="64" source="../sprites/road/waterTile16.png"/>
+  </tile>
+  <tile id="49">
+   <image width="64" height="64" source="../sprites/road/waterTile17.png"/>
+  </tile>
+  <tile id="50">
+   <image width="64" height="64" source="../sprites/road/waterTile18.png"/>
+  </tile>
+  <tile id="51">
+   <image width="64" height="64" source="../sprites/road/waterTile19.png"/>
+  </tile>
+  <tile id="52">
+   <image width="64" height="64" source="../sprites/road/waterTile20.png"/>
+  </tile>
+  <tile id="53">
+   <image width="64" height="64" source="../sprites/road/waterTile21.png"/>
+  </tile>
+  <tile id="54">
+   <image width="64" height="64" source="../sprites/road/waterTile22.png"/>
+  </tile>
+  <tile id="55">
+   <image width="64" height="64" source="../sprites/road/waterTile23.png"/>
+  </tile>
+  <tile id="56">
+   <image width="64" height="64" source="../sprites/road/waterTile24.png"/>
+  </tile>
+  <tile id="57">
+   <image width="64" height="64" source="../sprites/road/waterTile25.png"/>
+  </tile>
+  <tile id="58">
+   <image width="64" height="64" source="../sprites/road/waterTile26.png"/>
+  </tile>
+  <tile id="59">
+   <image width="64" height="64" source="../sprites/road/waterTile27.png"/>
+  </tile>
+  <tile id="60">
+   <image width="64" height="64" source="../sprites/road/waterTile28.png"/>
+  </tile>
+  <tile id="61">
+   <image width="64" height="64" source="../sprites/road/waterTile29.png"/>
+  </tile>
+  <tile id="62">
+   <image width="64" height="64" source="../sprites/road/waterTile30.png"/>
+  </tile>
+  <tile id="63">
+   <image width="64" height="64" source="../sprites/road/waterTile31.png"/>
+  </tile>
+  <tile id="64">
+   <image width="64" height="64" source="../sprites/road/waterTile32.png"/>
+  </tile>
+  <tile id="65">
+   <image width="64" height="64" source="../sprites/road/waterTile33.png"/>
+  </tile>
+  <tile id="66">
+   <image width="64" height="64" source="../sprites/road/waterTile34.png"/>
+  </tile>
+  <tile id="67">
+   <image width="64" height="64" source="../sprites/road/waterTile35.png"/>
+  </tile>
+  <tile id="68">
+   <image width="64" height="64" source="../sprites/road/waterTile36.png"/>
+  </tile>
+  <tile id="69">
+   <image width="64" height="64" source="../sprites/road/waterTile37.png"/>
+  </tile>
+  <tile id="70">
+   <image width="64" height="64" source="../sprites/road/waterTile38.png"/>
+  </tile>
+  <tile id="71">
+   <image width="64" height="64" source="../sprites/road/waterTile39.png"/>
+  </tile>
+  <tile id="72">
+   <image width="64" height="64" source="../sprites/road/waterTile40.png"/>
+  </tile>
+  <tile id="73">
+   <image width="64" height="64" source="../sprites/road/waterTile41.png"/>
+  </tile>
+  <tile id="74">
+   <image width="64" height="64" source="../sprites/road/waterTile42.png"/>
+  </tile>
+  <tile id="75">
+   <image width="64" height="64" source="../sprites/road/waterTile43.png"/>
+  </tile>
+  <tile id="76">
+   <image width="64" height="64" source="../sprites/road/waterTile44.png"/>
+  </tile>
+  <tile id="77">
+   <image width="64" height="64" source="../sprites/road/waterTile45.png"/>
+  </tile>
+  <tile id="78">
+   <image width="64" height="64" source="../sprites/road/waterTile46.png"/>
+  </tile>
+  <tile id="79">
+   <image width="64" height="64" source="../sprites/road/StoreApple.png"/>
+  </tile>
+  <tile id="80">
+   <image width="64" height="64" source="../sprites/road/StoreSausage.png"/>
+  </tile>
+ </tileset>
+ <layer name="Graphic" width="14" height="14">
+  <data encoding="csv">
+37,37,37,37,37,37,81,37,37,37,37,37,37,37,
+37,21,22,37,32,9,81,37,37,37,32,9,37,37,
+32,24,19,37,37,34,81,37,37,37,37,34,37,37,
+37,27,23,13,13,12,49,13,13,9,37,10,13,9,
+37,28,29,37,37,34,81,37,37,34,37,34,37,34,
+37,37,37,37,37,34,81,37,37,34,37,34,37,34,
+37,37,37,37,37,34,81,37,37,14,13,15,37,34,
+37,37,37,37,37,34,81,37,37,37,37,37,37,34,
+37,37,37,37,37,34,72,63,37,37,37,87,37,34,
+37,37,37,37,37,34,37,72,63,37,26,37,37,34,
+32,13,13,17,13,12,33,88,81,37,34,37,37,34,
+37,37,37,34,37,34,37,62,73,37,14,13,13,15,
+37,37,37,14,13,15,62,73,37,37,37,37,37,37,
+37,37,37,37,37,37,81,37,37,37,37,37,37,37
+</data>
+ </layer>
+ <layer name="Roadmap" width="14" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2,2,0,2,2,0,0,0,0,2,2,0,0,
+6,2,2,0,0,2,0,0,0,0,0,2,0,0,
+0,2,2,2,2,2,2,2,2,2,0,2,2,2,
+0,2,2,0,0,2,0,0,0,2,0,2,0,2,
+0,0,0,0,0,2,0,0,0,2,0,2,0,2,
+0,0,0,0,0,2,0,0,0,2,2,2,0,2,
+0,0,0,0,0,2,0,0,0,0,0,0,0,2,
+0,0,0,0,0,2,0,0,0,0,5,0,0,2,
+0,0,0,0,0,2,0,0,0,0,2,0,0,2,
+2,2,2,2,2,2,3,0,0,0,2,0,0,2,
+0,0,0,2,0,2,0,0,0,0,2,2,2,2,
+0,0,0,2,2,2,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
