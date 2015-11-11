@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2015 Miguel van de Laar
+Copyright (c) 2015 Zuyd University (http://www.zuyd.nl)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
